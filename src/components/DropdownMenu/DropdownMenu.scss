@@ -1,0 +1,72 @@
+.dropdown__container {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  .options {
+    position: absolute; /* Gör att dropdownen inte påverkar layouten */
+    top: 100%; /* Placera den under knappen */
+    left: 0;
+    transform: translateY(0);
+    transition:
+      opacity 0.2s ease-in-out,
+      transform 0.3s ease-in-out;
+    /*  */
+    width: 200px;
+    height: 30px;
+    transform: translateY(0);
+    .foldOut {
+      display: flex;
+      flex-direction: column;
+      background: hsl(0 0% 10% / 1);
+      border: 2px solid black;
+    }
+  }
+  .foldOutButton {
+    position: absolute;
+    left: 152px;
+    top: -40px;
+  }
+}
+.invisible {
+  opacity: 0;
+  transform: translateY(-10px);
+
+  visibility: hidden;
+  position: absolute;
+}
+/* .dropdown__container {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+
+  .options {
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    width: 200px;
+    transform: translateY(0);
+    transition:
+      opacity 0.2s ease-in-out,
+      transform 0.2s ease-in-out;
+
+    .foldOut {
+      display: flex;
+      flex-direction: column;
+      background: hsl(0 0% 10% / 1);
+      border: 2px solid black;
+    }
+  }
+
+  .foldOutButton {
+    position: absolute;
+    left: 205px;
+    top: 0px;
+  }
+}
+
+.invisible {
+  opacity: 0;
+  transform: translateY(-10px);
+  visibility: hidden;
+  position: absolute;
+} */
