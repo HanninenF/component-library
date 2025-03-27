@@ -225,8 +225,6 @@ Perfekt! Här kommer en lista med 5 **React-komponentövningar** som bara använ
 - **&**
 - **compound selectors**
 
-Alla övningar går från enklare till mer utmanande. Fokus är på selektorer och struktur. **Ingen kod här – bara uppdrag med tydlig HTML-struktur att följa.**
-
 ---
 
 ### 🟢 1. **Button med olika tillstånd**
@@ -328,5 +326,3 @@ Alla övningar går från enklare till mer utmanande. Fokus är på selektorer o
 - Använd `nth-child` för att lägga till gräns på alla utom sista.
 
 ---
-
-Vill du ha fler övningar, eller kanske uppföljning för var och en? Jag hjälper gärna vidare 💪
