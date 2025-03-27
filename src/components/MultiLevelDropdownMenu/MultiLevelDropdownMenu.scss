@@ -1,0 +1,49 @@
+.dropdownMenu {
+  margin: 1em;
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: relative; /* För att hålla menyns element i rätt position */
+  }
+
+  li {
+    position: relative;
+  }
+
+  /* Dölja undermenyer från början */
+  .subMenu ul {
+    padding: 0.1em 10px 0.1em 10px;
+    display: none;
+    position: absolute;
+    top: 100%; /* Placera undermenyn direkt under */
+    left: 0;
+    background-color: black;
+    border: 2px solid red;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  /* Visa undermenyer vid hover på subMenu */
+  .subMenu:hover > ul {
+    display: block;
+    opacity: 1;
+    z-index: 1;
+  }
+
+  /* Meny 3 ska vara synlig hela tiden, men flyttas vid hover */
+  .menu3 {
+    position: absolute; /* Placera den under Menyalternativ 1 */
+    top: 100%; /* Placera den direkt under menyalternativ 1 */
+    left: 0;
+
+    width: 100%;
+    z-index: 0;
+    transition: top 0.3s ease;
+  }
+
+  /* När du hovrar på meny 2, flytta meny 3 nedåt */
+  .subMenu:hover ~ .menu3 {
+    top: 205%; /* Flytta Meny 3 nedåt när meny 2 är i hover-läge */
+  }
+}
