@@ -43,10 +43,7 @@ type ProductTableProps = {
   products: ProductType[];
 };
 
-type GroupedProductsType = {
-  showCategory: string;
-  product: string;
-};
+
 
 function ProductTable({ products }: ProductTableProps) {
   const groupedProducts = groupProductsByCategory(products);
