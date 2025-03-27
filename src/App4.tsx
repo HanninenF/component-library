@@ -2,7 +2,7 @@ import React from "react";
 import {
   GroupedWorkoutType,
   groupWorkoutsByCategory,
-} from "./utils/groupWorkoutsByCategory/groupWorkoutsByCategory";
+} from "./utils/groupByCategory/groupByCategory";
 
 type WorkoutCategoryRowProps = {
   category: string;
