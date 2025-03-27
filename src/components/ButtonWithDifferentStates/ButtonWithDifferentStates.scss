@@ -1,0 +1,27 @@
+.btn {
+  cursor: pointer;
+  background-color: #000000;
+
+  &:active {
+    background-color: red;
+    transform: scale(1.05);
+  }
+}
+
+.primary {
+  &:disabled {
+    color: red;
+    background-color: rgb(0, 255, 0);
+    cursor: not-allowed;
+    &:active {
+      transform: none;
+    }
+  }
+
+  &:hover {
+    background-color: aqua;
+  }
+  &:focus {
+    border: 2px solid red;
+  }
+}
