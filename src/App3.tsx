@@ -62,7 +62,7 @@ export default function App3() {
     {
       category: "Vegetables",
       price: "$1000",
-      stocked: false,
+      stocked: false,   
       name: "Cucumber",
       id: nanoid(),
     },
