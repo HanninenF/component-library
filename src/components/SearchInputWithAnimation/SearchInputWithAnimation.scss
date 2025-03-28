@@ -1,5 +1,6 @@
 .search {
   cursor: text;
+  background-color: hsl(180 44% 24% / 1);
   display: flex;
   align-items: center;
   margin: 4em 0;
@@ -25,6 +26,7 @@
   }
 
   &:focus-within {
+    background-color: hsl(105 61% 28% / 1);
     border-color: #242424;
     outline: 2px solid rgb(175 173 29);
     outline-offset: -2px;
