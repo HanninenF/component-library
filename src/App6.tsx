@@ -1,3 +1,4 @@
+import Accordion from "./components/Accordion/Accordion";
 import Alert from "./components/Alert/Alert";
 import ButtonWithDifferentStates from "./components/ButtonWithDifferentStates/ButtonWithDifferentStates";
 import InteractiveTab from "./components/DropdownMenu/InteractiveTab/InteractiveTab";
@@ -41,6 +42,7 @@ export default function App6() {
       <Alert alert={alerts.success} />
       <Alert alert={alerts.warning} />
       <Alert alert={alerts.error} />
+      <Accordion />
     </>
   );
 }
