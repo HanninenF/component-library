@@ -3,6 +3,7 @@ import Alert from "./components/Alert/Alert";
 import ButtonWithDifferentStates from "./components/ButtonWithDifferentStates/ButtonWithDifferentStates";
 import InteractiveTab from "./components/DropdownMenu/InteractiveTab/InteractiveTab";
 import MultiLevelDropdownMenu from "./components/MultiLevelDropdownMenu/MultiLevelDropdownMenu";
+import SearchInputWithAnimation from "./components/SearchInputWithAnimation/SearchInputWithAnimation";
 
 const alertTypes = ["warning", "error", "success"] as const;
 export type AlertTypeTypes = (typeof alertTypes)[number];
@@ -36,6 +37,7 @@ const alerts: AlertsType = {
 export default function App6() {
   return (
     <>
+      <SearchInputWithAnimation />
       <MultiLevelDropdownMenu />
       <InteractiveTab />
       <ButtonWithDifferentStates />
